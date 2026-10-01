@@ -1,0 +1,45 @@
+== 尝试 A：经典发贴 URL ==
+!! console.error: Permissions policy violation: unload is not allowed in this document.
+!! console.error: Permissions policy violation: unload is not allowed in this document.
+!! console.error: Permissions policy violation: unload is not allowed in this document.
+URL: http://static.tieba.baidu.com/tb/error.html
+A 结果: {
+  "qlEditors": 0,
+  "placeholders": [],
+  "title": "贴吧404",
+  "bodyHint": "进入贴吧 | 您的访问出错了。 返回首页 | 很抱歉，您要访问的页面不存在。请检查您输入的网址是否正确。 | 下载贴吧APP | 看高清直播、视频！ | © 2022 Baidu贴吧协议|吧主制度|意见反馈|网络谣言警示"
+}
+== 尝试 B：回到新版页，监听错误并点击 add-btn 外层 ==
+!! pageerror: _typeof is not defined
+!! console.error: Error: rate limit exceeded
+    at https://game.weixin.qq.com/cgi-bin/minigame/static/pc-gamesdk-alpha/wxgamesdkframe.html:1:11004
+    at Generator.nex
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Error: rate limit exceeded
+    at https://game.weixin.qq.com/cgi-bin/minigame/static/pc-gamesdk-alpha/wxgamesdkframe.html:1:11004
+    at Generator.nex
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.error: Error: timeout
+    at https://game.weixin.qq.com/cgi-bin/minigame/static/pc-gamesdk-alpha/wxgamesdkframe.html:1:9167
+    at Generator.throw (<anonymou
+!! console.error: Failed to load resource: net::ERR_CONNECTION_REFUSED
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+!! console.warning: Mixed Content: The page at 'https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7' was loaded over HTTPS, but requested an insecure element 'http:/
+点击目标: {"x":701.5,"y":29.5}
+B 结果: {
+  "url": "https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7",
+  "qlEditors": 0,
+  "placeholders": [],
+  "visibleOverlays": []
+}

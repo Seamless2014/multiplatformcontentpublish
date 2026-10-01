@@ -1,0 +1,28 @@
+homeBtn: {"x":701.5,"y":29.5}
+弹窗状态: {
+  "ql": 3,
+  "dlg": [
+    {
+      "tag": "DIV",
+      "cls": "publisher-warp"
+    },
+    {
+      "tag": "DIV",
+      "cls": "publisher-container"
+    }
+  ],
+  "baTexts": [
+    {
+      "tag": "DIV",
+      "cls": "form-section mt-10",
+      "t": "发布到吧 没有搜索到相关吧",
+      "html": "<div data-v-b8ac62a0=\"\" class=\"form-section mt-10\"><span data-v-b8ac62a0=\"\" class=\"item-title\">发布到吧</span><div data-v-b8ac62a0=\"\" class=\"search-warp\">"
+    },
+    {
+      "tag": "SPAN",
+      "cls": "item-title",
+      "t": "发布到吧",
+      "html": "<span data-v-b8ac62a0=\"\" class=\"item-title\">发布到吧</span>"
+    }
+  ]
+}

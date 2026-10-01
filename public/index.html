@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多平台图文发布器</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>多平台图文发布器</h1>
+    <span class="sub">CDP 直连已登录浏览器 · 一次编辑 · 多平台分发</span>
+  </div>
+  <div class="conn-box">
+    <span id="conn-state" class="dot off"></span>
+    <span id="conn-text">未连接</span>
+    <select id="profile-mode" class="sel" title="复用日常 profile 需先完全退出浏览器；独立 profile 互不影响但需在专用窗口登录">
+      <option value="separate" selected>独立 profile（推荐）</option>
+      <option value="current">复用日常 profile</option>
+    </select>
+    <button id="btn-connect" class="btn">连接浏览器</button>
+    <button id="btn-launch" class="btn ghost">拉起浏览器</button>
+    <button id="btn-diag" class="btn ghost">诊断</button>
+    <button id="btn-check" class="btn ghost">检测登录态</button>
+  </div>
+</header>
+
+<div id="hint" class="hint hidden"></div>
+
+<div id="diag-panel" class="hidden card">
+  <h3>连接诊断</h3>
+  <div id="diag-body"></div>
+</div>
+
+<div id="login-panel" class="hidden card">
+  <h3>平台登录态</h3>
+  <div id="login-list" class="login-list"></div>
+</div>
+
+<main>
+  <section class="editor card">
+    <h2>文章</h2>
+    <input id="title" placeholder="文章标题（各平台字数要求不同，见右侧提示）" maxlength="120">
+    <textarea id="content" placeholder="正文支持 Markdown，图片用标准语法：![说明](https://...)"></textarea>
+    <input id="forum" placeholder="贴吧吧名（仅发布到百度贴吧时必填，如：数字化管理师）" style="display:none">
+    <div class="editor-foot">
+      <span id="count" class="muted"></span>
+      <label class="mode"><input type="radio" name="mode" value="draft" checked> 保存为草稿（推荐）</label>
+      <label class="mode danger"><input type="radio" name="mode" value="publish"> 直接发布（公众号群发不可撤回）</label>
+    </div>
+  </section>
+
+  <section class="side">
+    <div class="card">
+      <h2>目标平台</h2>
+      <div id="platforms" class="platforms"></div>
+      <div id="validate-result"></div>
+      <button id="btn-publish" class="btn primary big">开始发布</button>
+    </div>
+    <div class="card">
+      <div class="tasks-head">
+        <h2>发布进度</h2>
+        <button id="btn-clear" class="btn ghost small">清除已完成</button>
+      </div>
+      <div id="tasks" class="tasks"><p class="muted">暂无任务</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="muted">安全说明：默认仅保存草稿，不会对外发布；「直接发布」模式公众号为群发操作且不可撤回。各平台编辑器改版可能导致 selector 失效，失败任务会自动截图到 screenshots/ 目录。</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

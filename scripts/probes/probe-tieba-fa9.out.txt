@@ -1,0 +1,28 @@
+打开首页
+addBtn: {"x":701.5,"y":29.5}
+已点击: 2026-10-01T12:09:51.989Z
+waitFor 异常: locator.waitFor: Error: strict mode violation: locator('.ql-editor[data-placeholder*="标题"]') resolved to 2 elements:
+waitFor 结果=false 耗时=95ms
+ql-editor 实况: [
+  {
+    "ph": "必填，请输入贴子标题(5-31个字)",
+    "w": 529,
+    "h": 26,
+    "disp": "block",
+    "vis": "visible"
+  },
+  {
+    "ph": "请输入正文（建议200-2000字）",
+    "w": 647,
+    "h": 240,
+    "disp": "block",
+    "vis": "visible"
+  },
+  {
+    "ph": "请输入视频标题（5-80字）",
+    "w": 0,
+    "h": 0,
+    "disp": "block",
+    "vis": "visible"
+  }
+]

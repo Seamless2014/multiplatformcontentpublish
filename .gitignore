@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+
+# ===== 敏感：绝不入库 =====
+# 专用浏览器 profile —— 含各平台登录态 Cookie / Session
+data/browser-profile/
+# 发布任务记录（含文章内容与平台返回信息）
+data/tasks.json
+data/*.log
+data/real-publish-report.json
+data/verify-report.json
+data/platform-probe.json
+data/_pub_payload*.json
+
+# 失败/探测截图（含平台后台界面，可能暴露账号信息）
+screenshots/
+
+# 运行产物
+*.log
+.DS_Store
+Thumbs.db

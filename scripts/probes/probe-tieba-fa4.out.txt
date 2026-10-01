@@ -1,0 +1,12 @@
+== 首页「发贴」入口 ==
+URL: https://tieba.baidu.com/
+首页发贴按钮: {"x":701.5,"y":29.5,"cls":"add-post"}
+首页点发贴后: {
+  "url": "https://tieba.baidu.com/",
+  "qlEditors": 3,
+  "placeholders": [
+    "必填，请输入贴子标题(5-31个字)",
+    "请输入正文（建议200-2000字）",
+    "请输入视频标题（5-80字）"
+  ]
+}

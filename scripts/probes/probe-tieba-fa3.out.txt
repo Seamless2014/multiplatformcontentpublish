@@ -1,0 +1,23 @@
+打开软件吧
+!! pageerror: _typeof is not defined
+networkidle 超时（继续）
+失败资源 9 个:
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:14019/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:14020/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:14021/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:14016/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:14017/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:14018/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:13016/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:13017/wx_game_base/api/business
+  [xhr] net::ERR_CONNECTION_REFUSED https://localhost.weixin.qq.com:13018/wx_game_base/api/business
+页面脚本: {
+  "total": 18,
+  "list": [
+    "https://dlswbr.baidu.com/heicha/mm/2027/acs-2027.js?_=248729",
+    "https://dlswbr.baidu.com/heicha/mm/2027/acs-2027.js?_=248729",
+    "https://passport.baidu.com/passApi/js/wrapper.js?cdnversion=29847597"
+  ]
+}
+点击 add-post
+点击后: {"qlEditors":0,"typeofDefined":"undefined"}

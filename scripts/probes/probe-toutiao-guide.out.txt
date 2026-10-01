@@ -1,0 +1,143 @@
+打开头条发布页
+URL: https://mp.toutiao.com/profile_v4/graphic/publish
+含「我知道了」的元素: [
+  {
+    "tag": "SPAN",
+    "cls": "mp-func-guide position-popover byte-trigger byte-popover byte-trigger-position-t",
+    "rect": {
+      "x": 60,
+      "y": 1040,
+      "w": 248,
+      "h": 80
+    },
+    "pos": "absolute",
+    "z": "100",
+    "text": "支持为文章添加城市，提升推荐效果\n我知道了"
+  },
+  {
+    "tag": "DIV",
+    "cls": "byte-popover-content byte-popover-content-top",
+    "rect": {
+      "x": 60,
+      "y": 1040,
+      "w": 248,
+      "h": 80
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "支持为文章添加城市，提升推荐效果\n我知道了"
+  },
+  {
+    "tag": "DIV",
+    "cls": "byte-popover-content-inner",
+    "rect": {
+      "x": 60,
+      "y": 1040,
+      "w": 248,
+      "h": 80
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "支持为文章添加城市，提升推荐效果\n我知道了"
+  },
+  {
+    "tag": "DIV",
+    "cls": "byte-popover-inner",
+    "rect": {
+      "x": 60,
+      "y": 1040,
+      "w": 248,
+      "h": 80
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "支持为文章添加城市，提升推荐效果\n我知道了"
+  },
+  {
+    "tag": "DIV",
+    "cls": "byte-popover-inner-content",
+    "rect": {
+      "x": 60,
+      "y": 1040,
+      "w": 248,
+      "h": 80
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "支持为文章添加城市，提升推荐效果\n我知道了"
+  },
+  {
+    "tag": "DIV",
+    "cls": "",
+    "rect": {
+      "x": 72,
+      "y": 1052,
+      "w": 224,
+      "h": 56
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "支持为文章添加城市，提升推荐效果\n我知道了"
+  },
+  {
+    "tag": "DIV",
+    "cls": "mp-func-guide-dismiss",
+    "rect": {
+      "x": 72,
+      "y": 1088,
+      "w": 224,
+      "h": 20
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "我知道了"
+  },
+  {
+    "tag": "SPAN",
+    "cls": "",
+    "rect": {
+      "x": 240,
+      "y": 1090,
+      "w": 56,
+      "h": 16
+    },
+    "pos": "static",
+    "z": "auto",
+    "text": "我知道了"
+  }
+]
+.ProseMirror 数量: 1
+编辑器中心 elementFromPoint 链: ["DIV.byte-drawer-mask","DIV.byte-drawer-wrapper","BODY.","HTML."]
+全屏疑似遮罩: [
+  {
+    "tag": "DIV",
+    "cls": "pgc-wrapper pgc-index is-full-screen graphic_publish-wrapper",
+    "pe": "auto",
+    "z": "auto",
+    "vis": "visible",
+    "disp": "flex"
+  },
+  {
+    "tag": "DIV",
+    "cls": "byte-drawer-wrapper ai-assistant-drawer",
+    "pe": "auto",
+    "z": "1002",
+    "vis": "visible",
+    "disp": "block"
+  },
+  {
+    "tag": "DIV",
+    "cls": "byte-drawer-mask fade-appear-done fade-enter-done",
+    "pe": "auto",
+    "z": "auto",
+    "vis": "visible",
+    "disp": "block"
+  }
+]
+click 结果: 失败 - locator.click: Timeout 8000ms exceeded.
+focus 结果: 成功
+force click 结果: 成功
+标题选择器 textarea[placeholder*="标题"]: 1 个
+标题选择器 input[placeholder*="标题"]: 0 个
+标题选择器 .article-input__title: 0 个
+截图: probe-toutiao-guide.png

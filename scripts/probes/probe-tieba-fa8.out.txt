@@ -1,0 +1,11 @@
+search-warp HTML:
+<div data-v-b8ac62a0="" class="search-warp"><div data-v-b8ac62a0=""><svg data-v-b8ac62a0="" class="search-icon"><use xlink:href="#select_forum"></use></svg></div><svg data-v-b8ac62a0="" class="right_down"><use xlink:href="#icon_down18"></use></svg><svg data-v-b8ac62a0="" class="search-icon" style="display: none;"><use xlink:href="#icon_search18"></use></svg><input data-v-b8ac62a0="" type="input" placeholder="选择吧" class="search-box cursor-pointer"><div data-v-b8ac62a0="" class="search-bottom" style="display: none;"><div data-v-b8ac62a0="" class="forum-list"><!----><!----><div data-v-b8ac62a0="" class="no-data"> 没有搜索到相关吧 </div></div></div></div>
+search input: {"ph":"选择吧","x":458,"y":156}
+联想列表:
+[
+  {
+    "t": "软件关注49.4W日新贴7",
+    "cls": "forum-list",
+    "h": 56
+  }
+]

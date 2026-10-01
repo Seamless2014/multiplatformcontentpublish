@@ -1,0 +1,18 @@
+{
+  "name": "multi-publisher",
+  "version": "0.1.0",
+  "description": "多平台图文发布器：通过 CDP 直连已登录浏览器，将一篇文章发布到微信公众号/今日头条/知乎/百家号/小红书",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "marked": "^12.0.2",
+    "playwright-core": "^1.44.0"
+  }
+}

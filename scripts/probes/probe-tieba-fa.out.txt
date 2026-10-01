@@ -1,0 +1,18 @@
+打开软件吧
+URL: https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7
+add-post: {"x":701.5,"y":29.5,"topAtPoint":"SPAN.ml-4","text":"发贴"}
+已点击，等待 2s
+URL after 2s: https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7
+2s 时 DOM: {
+  "qlEditors": 0,
+  "qlPlaceholder": [],
+  "dialogs": [],
+  "iframes": [
+    "https://game.weixin.qq.com/cgi-bin/minigame/static/pc-gamesdk-alpha/wxgamesdkfra"
+  ]
+}
+URL after 6s: https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7
+6s 时 ql-editor: {"qlEditors":0,"qlPlaceholder":[]}
+编辑器未出现，重试点击一次
+重试后 ql-editor: {"qlEditors":0,"qlPlaceholder":[]}
+URL after retry: https://tieba.baidu.com/f?kw=%E8%BD%AF%E4%BB%B6%E5%90%A7
