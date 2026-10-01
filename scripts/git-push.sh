@@ -15,20 +15,18 @@ REMOTE_URL="https://github.com/Seamless2014/multiplatformcontentpublish.git"
 
 cd "$(dirname "$0")/.."
 
-# ── 1. 选一个当前可连通的 IP ──
-PICKED=""
+# ── 1. 选一个当前可连通的 IP（探测失败不阻断，交给 git 重试）──
+PICKED="${IP_CANDIDATES[0]}"
 for ip in "${IP_CANDIDATES[@]}"; do
-  if curl -s --resolve "github.com:443:${ip}" -o /dev/null -w "" \
-       --max-time 10 --noproxy "*" https://github.com 2>/dev/null; then
-    PICKED="$ip"; echo "选用 IP: $ip"; break
+  code=$(curl -s --resolve "github.com:443:${ip}" -o /dev/null -w "%{http_code}" \
+           --max-time 8 --noproxy "*" https://github.com 2>/dev/null)
+  [ -z "$code" ] && code="000"
+  if [ "$code" = "200" ] || [ "$code" = "301" ] || [ "$code" = "302" ]; then
+    PICKED="$ip"; echo "选用 IP: $ip (HTTP $code)"; break
   fi
-  echo "IP $ip 不可达，尝试下一个..."
+  echo "IP $ip 暂不可达 (HTTP $code)"
 done
-if [ -z "$PICKED" ]; then
-  echo "错误：所有候选 IP 均不可达。请用 DoH 查询最新 IP 后更新 IP_CANDIDATES。"
-  echo "  curl -s 'https://223.5.5.5/resolve?name=github.com&type=A'"
-  exit 1
-fi
+echo "使用 IP: $PICKED（本机直连 GitHub 时通时断，探测失败也会继续尝试推送）"
 
 IP_URL="https://${PICKED}/Seamless2014/multiplatformcontentpublish.git"
 cleanup() {
